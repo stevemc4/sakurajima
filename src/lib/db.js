@@ -3,7 +3,7 @@ import path from 'path'
 import fs from 'fs'
 
 if (!fs.existsSync(path.join(process.cwd(), 'sakurajima.db'))) {
-  fs.writeFileSync(path.join(process.cwd(), 'sakurajima.db'), "")
+  fs.writeFileSync(path.join(process.cwd(), 'sakurajima.db'), '')
 }
 
 export default knex({
