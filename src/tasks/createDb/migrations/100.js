@@ -11,6 +11,7 @@ export default function run () {
     .createTable('book', table => {
       table.increments('id').primary()
       table.string('name', 512).notNullable()
+      table.text('desc')
       table.string('image', 255)
     })
     .createTable('bookAuthor', table => {
